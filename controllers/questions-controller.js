@@ -1,4 +1,4 @@
-const questionsService = require("../services/questions/questions-service")
+const questionsService = require("../services/questions-service")
 
 module.exports = (app) => {
 

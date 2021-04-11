@@ -1,4 +1,3 @@
-// TODO: visit https://expressjs.com/
 const express = require('express')
 const app = express()
 
@@ -13,13 +12,7 @@ app.use(function (req, res, next) {
 });
 
 
-const demos = require('./controllers/demos-controller')
-demos(app)
-
-// const quizzesController = require('./controllers/quizzes-controller')
-// quizzesController(app)
-
-require('./controllers/quizzes-controller')(app)
 require('./controllers/questions-controller')(app)
+require('./controllers/quizzes-controller')(app)
 
 app.listen(4000)

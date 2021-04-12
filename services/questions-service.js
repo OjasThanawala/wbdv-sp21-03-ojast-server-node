@@ -1,8 +1,5 @@
 const questions = require('./questions.json');
 
-const createQuestion = () => {}
-const createQuestionForQuiz = () => {}
-
 const findAllQuestions = () => {
     return  questions;
 }
@@ -18,11 +15,7 @@ const findQuestionById = (quid) => {
     });
 }
 
-const updateQuestion = () => {}
-const deleteQuestion = () => {}
-
 module.exports = {
-    createQuestion, findQuestionsForQuiz,
-    findAllQuestions, findQuestionById,
-    updateQuestion, deleteQuestion
+    findQuestionsForQuiz,
+    findAllQuestions, findQuestionById
 }

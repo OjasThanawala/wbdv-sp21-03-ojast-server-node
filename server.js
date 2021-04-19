@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/whiteboard-ojas',
+mongoose.connect('mongodb+srv://ojasthanawala:root@ojas-wbdv-a8.woasd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     {useNewUrlParser: true, useUnifiedTopology: true});
 
 const bodyParser = require('body-parser')

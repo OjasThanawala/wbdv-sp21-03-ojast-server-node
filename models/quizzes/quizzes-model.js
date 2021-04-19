@@ -4,4 +4,4 @@ const quizModel = mongoose.model(
     'QuizModel',
     quizSchema
 )
-module.exports = quizMode
+module.exports = quizModel

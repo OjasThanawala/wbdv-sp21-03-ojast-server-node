@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://ojasthanawala:root@ojas-wbdv-a8.woasd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://ojasthanawala:root@ojas-wbdv-a8.woasd.mongodb.net/whiteboard-ojas?retryWrites=true&w=majority',
     {useNewUrlParser: true, useUnifiedTopology: true});
 
 const bodyParser = require('body-parser')
@@ -24,4 +24,4 @@ require('./controllers/questions-controller')(app)
 require('./controllers/quizzes-controller')(app)
 require('./controllers/quiz-attempts-controller')(app)
 
-app.listen(4000)
+app.listen(process.env.PORT || 4000)
